@@ -16,7 +16,7 @@ export default function Gallery({ collection }) {
       <div>
         <button onClick={slideLeft}>
           <svg
-            className="w-6 h-6 mx-2 text-gray-400"
+            className="mt-[-3rem] w-4 h-4 mx-2 text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -49,8 +49,8 @@ export default function Gallery({ collection }) {
                 // className="grayscale w-[100px] h-[150px] object-cover inline-block cursor-pointer hover:grayscale-0"
                 className="inline-block object-cover overflow-hidden"
               />
-              <h1 className="text-lg text-neutral-900">{obra.title}</h1>
-              <p className="text-neutral-600">{obra.description}</p>
+              <h1 className="text-lg text-neutral-600">{obra.title}</h1>
+              <p className="text-neutral-400">{obra.description}</p>
             </div>
           )}
         </AnimatePresence>
@@ -58,7 +58,7 @@ export default function Gallery({ collection }) {
       <div>
         <button onClick={slideRight}>
           <svg
-            className="w-6 h-6 mx-2 text-gray-400"
+            className="mt-[-3rem] w-4 h-4 mx-2 text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
