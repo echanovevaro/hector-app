@@ -1,0 +1,40 @@
+{
+  "gallery": [
+    {
+      "id": 1,
+      "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/2b.jpg",
+      "title": "Bloqueo",
+      "description": "Acrílico sobre metacrilato (103x153cm).",
+      "serie": "BLOQUES"
+    },
+    {
+      "id": 2,
+      "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/20b.jpg",
+      "title": "Futuro bloque",
+      "description": "Mixta sobre tabla (120x194 cm).",
+      "serie": "BLOQUES"
+    },
+
+    {
+      "id": 3,
+      "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/16b.jpg",
+      "title": "Cúbico",
+      "description": "Mixta sobre Fórex (88x120cm).",
+      "serie": "BLOQUES"
+    },
+    {
+      "id": 4,
+      "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/4b.jpg",
+      "title": "Te bloqueo",
+      "description": "Mixta sobre Fórex (28x57cm).",
+      "serie": "BLOQUES"
+    },
+    {
+      "id": 5,
+      "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/3b.jpg",
+      "title": "Bloque tras bloque",
+      "description": "Acrílico sobre tabla (28x57cm ).",
+      "serie": "BLOQUES"
+    }
+  ]
+}
