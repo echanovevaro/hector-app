@@ -49,7 +49,7 @@ export default function Gallery({ collection }) {
                 // className="grayscale w-[100px] h-[150px] object-cover inline-block cursor-pointer hover:grayscale-0"
                 className="inline-block object-cover overflow-hidden"
               />
-              <h1 className="text-lg text-neutral-600">{obra.title}</h1>
+              <h1 className="text-neutral-600">{obra.title}</h1>
               <p className="text-neutral-400">{obra.description}</p>
             </div>
           )}
