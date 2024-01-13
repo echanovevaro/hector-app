@@ -75,6 +75,7 @@
     right: 0;
     animation: zoom 5s ease-in forwards;
     z-index: -1;
+    overflow: hidden;
   }
 
   .blur {

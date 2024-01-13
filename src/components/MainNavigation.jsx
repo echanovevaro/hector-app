@@ -12,35 +12,37 @@ export default function MainNavigation() {
   const [openSubMenu, setOpenSubMenu] = useState(false)
   return (
     <>
-      <nav
-        className={`p-8 flex justify-between items-center ${
-          pathname === "/" ? "text-white" : "text-neutral-600"
-        }`}
-      >
-        <h1 className={`text-lg text-neutral-600`}>
-          <span className={pathname === "/" ? "hidden" : "inline-block"}>
-            héctor romero
-          </span>
-        </h1>
-        <div className="lg:hidden z-10">
-          <button
-            className="navbar-burger pt-3"
-            onClick={() => {
-              setOpenMenu(true)
-              setOpenSubMenu(false)
-            }}
-          >
-            <svg
-              className="block h-4 w-4 fill-current"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+      <div className="fixed top-0 left-0 right-0 z-20">
+        <nav
+          className={`px-8 py-4 flex justify-between items-center ${
+            pathname === "/" ? "text-white" : "text-neutral-600"
+          }`}
+        >
+          <h1 className={`text-lg text-neutral-600`}>
+            <span className={pathname === "/" ? "hidden" : "inline-block"}>
+              héctor romero
+            </span>
+          </h1>
+          <div className="lg:hidden z-10">
+            <button
+              className="navbar-burger pt-3"
+              onClick={() => {
+                setOpenMenu(true)
+                setOpenSubMenu(false)
+              }}
             >
-              <title>Mobile menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-            </svg>
-          </button>
-        </div>
-      </nav>
+              <svg
+                className="block h-4 w-4 fill-current"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Mobile menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+        </nav>
+      </div>
       <AnimatePresence>
         {openMenu && (
           <div className={`navbar-menu relative z-50`}>

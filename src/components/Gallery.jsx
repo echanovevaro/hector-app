@@ -12,11 +12,11 @@ export default function Gallery({ collection }) {
     counter < collection.length - 1 ? setCounter(counter + 1) : setCounter(0)
   }
   return (
-    <div className="mt-[-100px] h-screen flex items-center justify-center lg:hidden">
+    <div className="mt-[-100px] h-screen w-full flex items-center justify-center lg:hidden">
       <div>
         <button onClick={slideLeft}>
           <svg
-            className="mt-[-3rem] w-4 h-4 mx-2 text-gray-400"
+            className="mt-[-2.5rem] w-4 h-4 mx-2 text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -50,7 +50,7 @@ export default function Gallery({ collection }) {
                 className="inline-block object-cover overflow-hidden"
               />
               <h1 className="text-neutral-600">{obra.title}</h1>
-              <p className="text-neutral-400">{obra.description}</p>
+              <p className="text-sm text-neutral-400">{obra.description}</p>
             </div>
           )}
         </AnimatePresence>
@@ -58,7 +58,7 @@ export default function Gallery({ collection }) {
       <div>
         <button onClick={slideRight}>
           <svg
-            className="mt-[-3rem] w-4 h-4 mx-2 text-gray-400"
+            className="mt-[-2.5rem] w-4 h-4 mx-2 text-gray-400"
             aria-hidden="true"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

@@ -4,7 +4,7 @@ export default function Home() {
   return (
     <>
       <div className="background" />
-      <main className="text-white w-screen h-screen">
+      <main className="text-white fixed bottom-0 right-0 left-0 top-0 z-10">
         <div className="mt-8 flex h-4/6 justify-center items-end">
           <h1
             id="logo-landing"
