@@ -71,7 +71,7 @@
     left: 0;
     position: absolute;
     top: 0;
-    bottom: 0;
+    bottom: 0.1px;
     right: 0;
     animation: zoom 5s ease-in forwards;
     z-index: -1;
@@ -83,7 +83,7 @@
     top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
+    bottom: 0.1px;
     background: rgba(0, 0, 0, 0.1);
     animation: blur 3s ease-in forwards;
     backdrop-filter: blur(4px);
@@ -95,15 +95,6 @@
     animation: fade-in 1.5s ease-in-out forwards;
     animation-delay: 2s;
     opacity: 0;
-  }
-
-  .wrapper {
-    position: absolute;
-    top: 0.5px;
-    left: 0;
-    right: 0;
-    bottom: 0.5px;
-    overflow: hidden;
   }
 }
 

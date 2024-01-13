@@ -55,7 +55,7 @@ export default function MainNavigation() {
               animate="visible"
               exit="hidden"
               transition={{ duration: 1 }}
-              className="text-white font-light fixed left-0 top-0 bottom-0 right-0 flex flex-col p-4 pt-6 bg-gray-500 border-r overflow-y-auto bg-opacity-40 backdrop-blur"
+              className="text-white font-light fixed left-0 top-0 bottom-0 right-0 flex flex-col p-4 pt-6 bg-gray-500 overflow-y-auto bg-opacity-40 backdrop-blur"
             >
               <div className="flex items-start justify-end">
                 <button
