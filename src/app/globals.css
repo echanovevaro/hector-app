@@ -16,14 +16,6 @@
   }
 }
 
-html {
-  overflow: hidden;
-}
-
-body {
-  overflow-y: scroll;
-}
-
 /* body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
