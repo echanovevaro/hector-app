@@ -15,7 +15,9 @@ export default function MainNavigation() {
       <div className="fixed top-0 left-0 right-0 z-20">
         <nav
           className={`px-8 py-4 flex justify-between items-center ${
-            pathname === "/" ? "text-white" : "text-neutral-600"
+            pathname === "/"
+              ? "text-white"
+              : "text-neutral-600 bg-white backdrop-blur bg-opacity-80"
           }`}
         >
           <h1 className={`text-lg text-neutral-600`}>
