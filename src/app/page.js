@@ -3,7 +3,9 @@ import Image from "next/image"
 export default function Home() {
   return (
     <>
-      <div className="background" />
+      <div className="wrapper">
+        <div className="background" />
+      </div>
       <main className="text-white fixed bottom-0 right-0 left-0 top-0 z-10">
         <div className="flex h-5/6 justify-center items-end">
           <h1
