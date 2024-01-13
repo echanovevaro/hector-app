@@ -13,7 +13,7 @@ export default function Gallery({ collection }) {
     counter < collection.length - 1 ? setCounter(counter + 1) : setCounter(0)
   }
 
-  function onPapStart(event, info) {
+  function onPanStart(event, info) {
     setInitialPosition(info.point.x)
   }
   function onPanEnd(event, info) {
