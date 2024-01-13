@@ -96,6 +96,16 @@
     animation-delay: 2s;
     opacity: 0;
   }
+
+  .wrapper {
+    position: absolute;
+    top: 0.5px;
+    left: 0;
+    right: 0;
+    bottom: 0.5px;
+    overflow-x: hidden; /* or any other value */
+    overflow-y: auto; /* or any other value */
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
