@@ -3,6 +3,7 @@ import { motion, AnimatePresence } from "framer-motion"
 import { useState } from "react"
 export default function Gallery({ collection }) {
   const [counter, setCounter] = useState(0)
+  const [initialPosition, setInitialPosition] = useState(0)
 
   const slideLeft = () => {
     counter > 0 ? setCounter(counter - 1) : setCounter(collection.length - 1)
@@ -11,6 +12,18 @@ export default function Gallery({ collection }) {
   const slideRight = () => {
     counter < collection.length - 1 ? setCounter(counter + 1) : setCounter(0)
   }
+
+  function onPapStart(event, info) {
+    setInitialPosition(info.point.x)
+  }
+  function onPanEnd(event, info) {
+    if (info.point.x < initialPosition) {
+      slideRight()
+    } else if (info.point.x > initialPosition) {
+      slideLeft()
+    }
+  }
+
   return (
     <div className="mt-[-100px] h-screen w-full flex items-center justify-center lg:hidden">
       <div>
@@ -48,6 +61,8 @@ export default function Gallery({ collection }) {
                 alt={obra.title}
                 // className="grayscale w-[100px] h-[150px] object-cover inline-block cursor-pointer hover:grayscale-0"
                 className="inline-block object-cover overflow-hidden"
+                onPanStart={onPanStart}
+                onPanEnd={onPanEnd}
               />
               <h1 className="text-neutral-600">{obra.title}</h1>
               <p className="text-sm text-neutral-400">{obra.description}</p>
