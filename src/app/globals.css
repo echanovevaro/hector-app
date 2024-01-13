@@ -61,7 +61,7 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .wrapper {
     position: absolute;
     top: 0;
@@ -104,14 +104,4 @@
     animation-delay: 2s;
     opacity: 0;
   }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  /* Styles for medium screens */
-  /* Add your responsive styles for medium screens here */
-}
-
-@media screen and (min-width: 1025px) {
-  /* Styles for large screens */
-  /* Add your responsive styles for large screens here */
 }

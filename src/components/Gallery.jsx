@@ -25,7 +25,7 @@ export default function Gallery({ collection }) {
   }
 
   return (
-    <div className="mt-[-100px] h-screen w-full flex items-center justify-center lg:hidden">
+    <div className="mt-[200px] w-full flex items-center justify-center lg:hidden">
       <div>
         <button onClick={slideLeft}>
           <svg
