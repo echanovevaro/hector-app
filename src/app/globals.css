@@ -75,6 +75,7 @@
     right: 0;
     animation: zoom 5s ease-in forwards;
     z-index: -1;
+    overflow: hidden;
   }
 
   .blur {
@@ -87,6 +88,7 @@
     animation: blur 3s ease-in forwards;
     backdrop-filter: blur(4px);
     z-index: 51;
+    overflow: hidden;
   }
 
   #logo-landing {
