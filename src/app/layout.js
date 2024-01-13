@@ -12,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="es">
-      <body className={`${inter.className} min-h-screen w-screen`}>
+      <body className={`${inter.className} overflow-hidden`}>
         <MainNavigation />
         {children}
       </body>
