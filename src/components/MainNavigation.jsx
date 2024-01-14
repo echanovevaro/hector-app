@@ -116,13 +116,22 @@ export default function MainNavigation() {
                     {openSubMenu && (
                       <motion.div
                         variants={{
-                          hidden: { opacity: 0, y: -10 },
-                          visible: { opacity: 1, y: 0 },
+                          hidden: {
+                            opacity: 0,
+                            height: 0,
+                            marginTop: "-1.5rem",
+                          },
+                          visible: {
+                            opacity: 1,
+                            height: "auto",
+                            marginTop: "-1rem",
+                          },
                         }}
                         initial="hidden"
                         animate="visible"
                         exit="hidden"
-                        className="mt-[-1rem] flex items-center flex-col gap-1 text-neutral-950"
+                        transition={{ duration: 0.5 }}
+                        className="flex items-center flex-col gap-1 text-neutral-950"
                       >
                         <li>
                           <Link
