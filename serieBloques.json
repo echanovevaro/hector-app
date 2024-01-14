@@ -22,15 +22,23 @@
       "description": "Mixta sobre Fórex (88x120cm).",
       "serie": "BLOQUES"
     },
+
     {
       "id": 4,
+      "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/15b.jpg",
+      "title": "Bloqueado",
+      "description": "Mixta sobre tabla (122x62cm).",
+      "serie": "BLOQUES"
+    },
+    {
+      "id": 5,
       "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/4b.jpg",
       "title": "Te bloqueo",
       "description": "Mixta sobre Fórex (28x57cm).",
       "serie": "BLOQUES"
     },
     {
-      "id": 5,
+      "id": 6,
       "imageUrl": "https://hectoromero.es/wp-content/uploads/2021/07/3b.jpg",
       "title": "Bloque tras bloque",
       "description": "Acrílico sobre tabla (28x57cm ).",
