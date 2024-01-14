@@ -1,9 +1,9 @@
 "use client"
 import { motion, AnimatePresence } from "framer-motion"
-import { useState } from "react"
+import { useRef, useState } from "react"
 export default function Gallery({ collection }) {
   const [counter, setCounter] = useState(0)
-  const [initialPosition, setInitialPosition] = useState(0)
+  const ref = useRef(0)
   const [loaded, setLoaded] = useState(false)
 
   const slideLeft = () => {
@@ -16,13 +16,13 @@ export default function Gallery({ collection }) {
     setLoaded(false)
   }
 
-  function onPanStart(event, info) {
-    setInitialPosition(info.point.x)
+  function onPanStart(_, info) {
+    ref.current = info.point.x
   }
-  function onPanEnd(event, info) {
-    if (info.point.x < initialPosition - 10) {
+  function onPanEnd(_, info) {
+    if (info.point.x < ref.current) {
       slideRight()
-    } else if (info.point.x > initialPosition + 10) {
+    } else if (info.point.x > ref.current) {
       slideLeft()
     }
   }
