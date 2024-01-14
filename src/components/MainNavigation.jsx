@@ -7,7 +7,6 @@ import { usePathname } from "next/navigation"
 
 export default function MainNavigation() {
   const pathname = usePathname()
-  console.log(pathname)
   const [openMenu, setOpenMenu] = useState(false)
   const [openSubMenu, setOpenSubMenu] = useState(false)
   return (
@@ -95,7 +94,7 @@ export default function MainNavigation() {
                       className="flex items-center"
                       onClick={() => setOpenSubMenu(!openSubMenu)}
                     >
-                      <span>OBRAS</span>
+                      <span>OBRA</span>
                       <svg
                         className="w-2.5 h-2.5 ms-3"
                         aria-hidden="true"

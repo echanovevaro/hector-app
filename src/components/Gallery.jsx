@@ -4,7 +4,7 @@ import { useRef, useState } from "react"
 export default function Gallery({ collection }) {
   const [counter, setCounter] = useState(0)
   const ref = useRef(0)
-  const [loaded, setLoaded] = useState(false)
+  const [loaded, setLoaded] = useState(true)
 
   const slideLeft = () => {
     counter > 0 ? setCounter(counter - 1) : setCounter(collection.length - 1)
