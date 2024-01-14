@@ -20,9 +20,9 @@ export default function Gallery({ collection }) {
     setInitialPosition(info.point.x)
   }
   function onPanEnd(event, info) {
-    if (info.point.x < initialPosition) {
+    if (info.point.x < initialPosition - 10) {
       slideRight()
-    } else if (info.point.x > initialPosition) {
+    } else if (info.point.x > initialPosition + 10) {
       slideLeft()
     }
   }
