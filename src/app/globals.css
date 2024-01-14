@@ -64,34 +64,26 @@
 @media screen and (max-width: 1024px) {
   .wrapper {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    inset: 0;
     overflow: hidden;
     z-index: -1;
     overflow: hidden;
   }
+
   .background {
     background-image: url("/26b.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: left;
     transform-origin: center;
-    left: 0;
     position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
+    inset: 0;
     animation: zoom 5s ease-in forwards;
   }
 
   .blur {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: rgba(0, 0, 0, 0.1);
     animation: blur 3s ease-in forwards;
     backdrop-filter: blur(4px);
@@ -103,5 +95,12 @@
     animation: fade-in 1.5s ease-in-out forwards;
     animation-delay: 2s;
     opacity: 0;
+  }
+}
+
+@media (orientation: landscape) {
+  .background {
+    background-image: url("/26b-landscape.jpg");
+    background-position: center;
   }
 }
