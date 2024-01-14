@@ -63,7 +63,7 @@ export default function Gallery({ collection }) {
                   transition={{ duration: 2 }}
                   src={obra.imageUrl}
                   alt={obra.title}
-                  className="inline-block object-cover overflow-hidden max-h-[68vh]"
+                  className="inline-block object-cover overflow-hidden max-h-[65vh]"
                   onPanStart={onPanStart}
                   onPanEnd={onPanEnd}
                   onLoad={() => setLoaded(true)}
