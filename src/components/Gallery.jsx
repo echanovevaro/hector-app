@@ -28,7 +28,7 @@ export default function Gallery({ collection }) {
   }
 
   return (
-    <div className="absolute inset-0 flex items-center justify-center flex-col lg:hidden overflow-hidden">
+    <div className="absolute landscape:relative landscape:mt-[75px] inset-0 flex items-center justify-center flex-col lg:hidden overflow-hidden">
       <div className="flex items-center justify-center gap-2">
         <div>
           <button onClick={slideLeft}>
@@ -52,7 +52,7 @@ export default function Gallery({ collection }) {
         {collection?.map((obra, index) => (
           <AnimatePresence key={obra.id}>
             {counter == index && (
-              <div className="flex flex-col items-center justify-end gap-1 text-sm">
+              <div className="flex flex-col items-center justify-end gap-1">
                 <motion.img
                   variants={{
                     hidden: { opacity: 0 },
@@ -79,8 +79,14 @@ export default function Gallery({ collection }) {
                     transition={{ duration: 1 }}
                     className="text-center"
                   >
-                    <h1 className="text-neutral-600">{obra.title}</h1>
-                    <p className="text-neutral-400">{obra.description}</p>
+                    <div className="flex items-center flex-col landscape:flex-row justify-center landscape:gap-2">
+                      <h1 className="text-neutral-600 text-sm landscape:text-xs">
+                        {obra.title}
+                      </h1>
+                      <p className="text-neutral-400 text-sm landscape:text-xs">
+                        {obra.description}
+                      </p>
+                    </div>
                   </motion.div>
                 )}
               </div>
@@ -108,7 +114,7 @@ export default function Gallery({ collection }) {
         </div>
       </div>
 
-      <ul className="flex items-center justify-center gap-3 mt-6">
+      <ul className="flex items-center justify-center gap-3 mt-6 mb-6 landscape:mt-2">
         {collection?.map((_, index) => (
           <button
             key={index}
