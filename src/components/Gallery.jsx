@@ -28,7 +28,7 @@ export default function Gallery({ collection }) {
   }
 
   return (
-    <div className="h-screen w-full flex items-center justify-center flex-col lg:hidden">
+    <div className="absolute inset-0 flex items-center justify-center flex-col lg:hidden overflow-hidden">
       <div className="flex items-center justify-center gap-2">
         <div>
           <button onClick={slideLeft}>
